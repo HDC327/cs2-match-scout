@@ -72,7 +72,7 @@
 ### 安装步骤
 
 1. 打开 [**Releases 页面**](https://github.com/HDC327/cs2-match-scout/releases/latest)，下载最新版本的 Windows 安装程序：  
-   `CS2-Match-Scout_1.0.0_x64-setup.exe`（约 28.5 MB）
+   `CS2-Match-Scout_1.0.2_x64-setup.exe`（约 28.5 MB）
 2. 双击运行安装程序，阅读免责声明后按向导完成安装（支持仅当前用户安装，无需复杂配置）。
 3. 首次打开后，跟随 **4 步引导向导** 即可快速完成：
    - 自动探测本机已安装的 5E / 完美客户端与 CS2 游戏目录；
@@ -82,11 +82,11 @@
 > **关于 Windows SmartScreen 提示**：由于个人独立工具尚未购买商业代码签名证书，首次双击 `.exe` 安装包时 Windows Defender 可能会弹出「Windows 已保护你的电脑」提示。你可以点击 **「更多信息」 → 「仍要运行」** 继续安装，也可以在 PowerShell 中核对下方 SHA-256 校验值确认文件未被篡改：
 >
 > ```powershell
-> Get-FileHash .\CS2-Match-Scout_1.0.0_x64-setup.exe -Algorithm SHA256
+> Get-FileHash .\CS2-Match-Scout_1.0.2_x64-setup.exe -Algorithm SHA256
 > ```
 >
 > `v1.0.0` 官方 SHA-256：  
-> `58F92EB13787500860E1BF8BAB2B21859AFB3F10128BECDCBBB2B1AC57E7EF49`
+> `CB71C00246F9022F16176D052DB2F2C5CD71F6FB78C63255008871B498A8B7D0`
 
 ---
 
@@ -119,6 +119,12 @@
 ---
 
 ## 版本更新记录
+
+### v1.0.2（2026-11-26）
+- 修复若干已知问题，大幅优化数据查询加载速度与设置/查对局交互体验
+
+### v1.0.1（2026-11-25）
+- 修复若干已知问题并优化桌面端交互细节
 
 ### v1.0.0（2026-11-25）
 - 正式发布 **成分局 · Windows 桌面小助手**（独立 NSIS 安装包，双击即用）
